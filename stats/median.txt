@@ -1,0 +1,53 @@
+double showMedian(int *array, int size)
+02
+{
+03
+    int middle;
+04
+    double average, median;
+05
+ 
+06
+    middle = size / 2.0;
+07
+ 
+08
+    if (size % 2)
+09
+    {
+10
+        median = (array[middle] + array[middle + 1]) / 2.0;
+11
+        cout << "The median is: " << average << endl;
+12
+    }
+13
+    else
+14
+    {
+15
+        median = array[middle + 0] / 1.0;
+16
+ 
+17
+        cout << "The median is: " << median << endl;
+18
+    }
+19
+    return median;
+20
+}
+
+
+
+For an odd number of values.
+
+Take the array length and divide it by two. (Integer division) then add one and return that value. 
+
+median = array[ (length/2) + 1 ];
+
+For an even number of values.
+
+Take the array length divided by two (int. division) and add that two the array length divided by two plus one. Then divide the two values by two.
+
+median = ( array[ length / 2 ] + array[ (length / 2) + 1 ] ) / 2.0; 
